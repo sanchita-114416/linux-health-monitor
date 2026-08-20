@@ -45,11 +45,3 @@ Run it on a schedule with cron:
 - bash, coreutils, `free`, `df`, `awk` (present on virtually every Linux box)
 - `curl` only if you're using webhook alerts
 
-## Notes for interview / portfolio use
-
-Good talking points: why CSV instead of a database (zero setup, easy to
-open anywhere), why load-average-as-percent-of-cores instead of a raw
-number (comparable across servers with different core counts), and how
-you'd scale it up (ship the CSV to a time-series DB, or replace the
-webhook call with a real alerting system like PagerDuty/OpsGenie for a
-higher-stakes environment).
